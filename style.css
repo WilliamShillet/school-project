@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  height: 100%;
+}
+nav {
+  display: block;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  background-color: black;
+}
+a {
+  float: center;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+}
+a:hover {
+  background-color:orange;
+  color:white;
+}
+#image {
+  display: block;
+  margin: auto;
+}
+#results1 {
+  color: white;
+  text-align: center;
+}
+#results2 {
+  color: white;
+  text-align: center;
+  }
+  #results3 {
+  color: white;
+  text-align: center;
+}
+#results4 {
+  color: white;
+  text-align: center;
+  }
+h1 {
+  color: yellow;
+  text-align: center;
+  font-family: Helvetica;
+  font-style: oblique;
+}
+h3 {
+  color: yellow;
+  text-align: center;
+  font-family: Helvetica;
+  font-style: oblique;
+}
+p {
+  text-align: center;
+  color: orange;
+  font-family: Helvetica;
+  width: 500px;
+  border: 10px;
+}
+form {
+  border: 4px solid yellow;
+  width: 25%;
+  margin: auto;
+  background-color: maroon;
+  font-family: Helvetica;
+}
+div {
+  padding-bottom: 5px;
+}
+table {
+    padding-top: 25px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: black;
+}
+#mail {
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    border: 2px solid black;
+    background-color: black;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+ul {
+    font-family: Helvetica;
+}
+li {
+    text-align: center;
+    font-family: Helvetica;
+    color: orange;
+}
