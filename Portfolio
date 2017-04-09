@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script>function toad() {
+            var stuffing = document.getElementById("messageBox").value;
+            var numChar = document.getElementById("messageBox").value.length;
+
+            var wordCount = 1;
+            var myPuncuation = 0;
+
+            for (var i = 0; i < numChar; i++) {
+                if (stuffing.charAt(i) === " "){
+                    wordCount = wordCount + 1;
+            }
+                if (stuffing.charAt(i) === "."){
+                    myPuncuation = myPuncuation + 1
+                }
+                 if (stuffing.charAt(i) === "!"){
+                    myPuncuation = myPuncuation + 1
+                }
+                 if (stuffing.charAt(i) === "?"){
+                    myPuncuation = myPuncuation + 1
+                }
+            }
+
+            var mySpaces = wordCount - 1;
+            var myAverage = (wordCount/myPuncuation);
+
+            document.getElementById("results1").innerHTML = "Word Count: " + wordCount;
+
+            document.getElementById("results2").innerHTML = " Sentence Count: " + myPuncuation;
+
+            document.getElementById("results3").innerHTML = " Spaces: " + mySpaces;
+
+            document.getElementById("results4").innerHTML = " Average Number of Words per Sentence: " + myAverage;
+        }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1><center>Portfolio</center></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <section>
+            <center><p>This is the first website I have created in Coding From Scratch using HTML, CSS and JavaScript.</center></p>
+        </section>
+        <div>
+            <center><textarea id="messageBox" rows="10" cols="50" placeholder="Text Information"></textarea></center>
+        </div>
+        <div>
+            <center><input type="button" onClick="toad()" value="Submit"></center>
+        </div>
+        <div>
+            <h3>Results</h3>
+            <div id="results1">
+            </div>
+
+            <div id="results2">
+            </div>
+
+            <div id="results3">
+            </div>
+
+            <div id="results4">
+            </div>
+        </div>
+        </div>
+        <div id=footer>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+    </body>
+</html>
